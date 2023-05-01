@@ -36,7 +36,7 @@ const router = createBrowserRouter([
             {
                 path: '/category/:id',
                 element: <Category />,
-                loader: ({ params }) => fetch(`http://localhost:3000/categorys/${params.id}`)
+                loader: ({ params }) => fetch(`https://the-news-dragon-server-absiddik676.vercel.app/categorys/${params.id}`)
             },
 
         ]
@@ -48,7 +48,7 @@ const router = createBrowserRouter([
             {
                 path: ':id',
                 element: <PrivateRout><News /></PrivateRout>,
-                loader: ({ params }) => fetch(`http://localhost:3000/news/${params.id}`)
+                loader: ({ params }) => fetch(`https://the-news-dragon-server-absiddik676.vercel.app/news/${params.id}`)
             }
         ]
 
@@ -60,5 +60,5 @@ export default router
 // {
 //     path:'category',
 //     element:<Category/>,
-//     loader:()=>fetch('http://localhost:3000/news')
+//     loader:()=>fetch('https://the-news-dragon-server-absiddik676.vercel.app/news')
 // }
