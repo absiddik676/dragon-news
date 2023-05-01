@@ -9,7 +9,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { NavDropdown } from 'react-bootstrap';
 const Header = () => {
     return (
-        <Container>
+        <Container className='mt-5'>
             <div className='text-center mt-4'>
                 <img src={logo} alt="" />
                 <p className='text-secondary'><small>Journalism Without Fear or Favour</small></p>
